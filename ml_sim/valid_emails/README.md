@@ -21,20 +21,22 @@ To run this project, you need to have Python 3.x installed on your system.
 
 ## Usage
 
-To use this email validator, you need to import the `validate_emails` function from `validate_email.py` file and call it with a list of strings that are supposed to be emails:
+To use this email validator, you need to import the `valid_emails` function from `valid_emails.py` file and call it with a list of strings that are supposed to be emails:
 
 ```python
-from validate_email import validate_emails
+from valid_emails import valid_emails
 
-emails = ["example@email.com", "invalid.email@.com", "anotherexample@email.com"]
-valid_emails = validate_emails(emails)
-print(valid_emails)
+emails = [
+    "example1@email.com", "invalid1.email@.com", "anotherexample1@email.com",
+    "not_an_email1", "email1@domain.", "no_at_symbol1.com",
+]
+print(valid_emails(emails))
 ```
 
-The `validate_emails` function will return a list of strings containing only the valid emails from the input list.
+The `valid_emails` function will return a list of strings containing only the valid emails from the input list.
 
 ```python
-["example@email.com", "anotherexample@email.com"]
+['example1@email.com', 'anotherexample1@email.com']
 ```
 
 If there are no valid emails in the input list, the function will return an empty list.
