@@ -23,7 +23,8 @@ To run this script, you need to have Python 3 installed on your system. You also
 You can install these libraries using pip:
 
 ```
-pip install requests hashlib
+pip install requests
+pip install hashlib
 ```
 
 ## Libraries used
@@ -36,12 +37,18 @@ This script uses the following libraries:
 ## Usage
 
 1. Clone or download this repository to your local machine.
-2. Open the `web_page_update_checker.py` file in a text editor.
-3. Replace the `url` variable with the URL of the web page you want to monitor.
-4. Replace the `telegram_token` and `chat_id` variables with your own values.
-5. Save the changes to the `web_page_update_checker.py` file.
-6. Open a terminal or command prompt and navigate to the directory containing the `web_page_update_checker.py` file.
-7. Run the script by entering the following command:
+2. Create the file `credentials.json` with the following parameters:
+    ```
+    {
+        "url_to_check": "https://yourwebsite.com",
+        "token": "your_telegram_token",
+        "chat_id": "you_telegram_chat_id"
+    }
+    ```
+    
+    See [this article]('https://medium.com/codex/using-python-to-send-telegram-messages-in-3-simple-steps-419a8b5e5e2') for more information
+3. Open a terminal or command prompt and navigate to the directory containing the `web_page_update_checker.py` file.
+4. Run the script by entering the following command:
 
 ```
 python web_page_update_checker.py
