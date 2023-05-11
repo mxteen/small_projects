@@ -46,7 +46,7 @@ This script uses the following libraries:
     }
     ```
     
-    See [this article]('https://medium.com/codex/using-python-to-send-telegram-messages-in-3-simple-steps-419a8b5e5e2') for more information
+    See [this article](https://medium.com/codex/using-python-to-send-telegram-messages-in-3-simple-steps-419a8b5e5e2) for more information
 3. Open a terminal or command prompt and navigate to the directory containing the `web_page_update_checker.py` file.
 4. Run the script by entering the following command:
 
