@@ -13,24 +13,16 @@ with open('credentials.json') as f:
     json_str = f.read()   
 credentials = json.loads(json_str)
 token = credentials['token']
-chat_id = credentials['chat_id_mx']
+chat_id = credentials['chat_id']
 url = credentials['url_to_check']
 
 # Initail conditions
-# Wait time between checks (in seconds)
-wait_time = (min_wait_time + max_wait_time) / 2
-
-# Retrieve the website content
-response = requests.get(url)
-
-# Hash the website content using SHA256
-current_hash = hashlib.sha256(response.content).hexdigest()
+i = 0  # Counter of checks
+wait_time = (min_wait_time + max_wait_time) / 2  # Wait time between checks, s
+response = requests.get(url)  # Retrieve the website content
+current_hash = hashlib.sha256(response.content).hexdigest() # Hash the content
 print(current_hash, '\n')
-
-# Counter of checks
-i = 0
-
-time.sleep(wait_time)
+time.sleep(wait_time)  # Pause before a checking loop starts
 
 while True:
     # Retrieve the website content
@@ -42,10 +34,10 @@ while True:
     # Setting the next random pause between checks
     wait_time = randint(min_wait_time, max_wait_time)
 
+    # Printing out the status messages: number, time of checks and a hash
     i += 1
     status = '{:%Y-%m-%d %H:%M:%S}'.format(datetime.datetime.now()) + \
              ' Проверка {}, hash: {}'.format(i, new_hash)
-    
     print(status)
 
     # Compare the new hash with the old hash
