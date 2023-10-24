@@ -1,3 +1,48 @@
+# Meal Planning Service for Every Day
+
+## Project Description
+
+This project is a service for creating a daily meal plan. The main idea is to help users plan their diet by providing them with a list of dishes and recipes for the next day. This can be implemented through a Telegram bot or email newsletter.
+
+## Concept
+
+### Survey and Personalization
+
+- The user starts by taking a survey (after successful testing of the MVP), where they provide the following information:
+  - Number of people the meal plan is for (or number of servings).
+  - Preferences for food items: meat, mushrooms, poultry, seafood (shrimp, mussels), white fish, red fish.
+  - Preferred dishes for lunch and dinner: salad, soup, main course.
+
+### Concept
+- In the first message (before the start of the 7-day period), the user will receive:
+  - A list of dishes for each day of the week.
+  - A list of necessary ingredients and their quantities.
+- Every evening, the user receives a message with:
+  - A list of dishes for breakfast, lunch, and dinner for the next day.
+  - Recipes for these dishes.
+  - A list of necessary ingredients and their quantities for cooking the dishes.
+
+### Disclaimer
+- The user is solely responsible for their health and well-being, especially if they have allergies or intolerances to certain foods. Before using the daily meal planning service, it is recommended to carefully assess dietary restrictions and consult a medical professional if necessary. Note that your personal food preferences and restrictions should be considered when choosing dishes from the provided recipes.
+- Naturally, I used someone else's recipes as a base, but all of them have been adapted to suit the taste of our family.
+- The recipe database will be kept private.
+
+### Feedback
+
+- Users can provide feedback and suggestions through:
+  - A Google form for constructive criticism with a predefined structure.
+  - The bot or email.
+
+## Motivation (Manifesto)
+
+1. This project solves my problem and is aimed at satisfying my needs for meal planning.
+
+2. I am creating this service because I want it to meet my requirements:
+   - Inclusion of only tried and tested dishes in the database.
+   - Interface through a Telegram bot.
+   - Minimalistic recipe text.
+   - Ability to create a grocery shopping list for the week ahead.
+
 # Сервис по составлению меню питания на каждый день
 
 
