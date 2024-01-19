@@ -10,6 +10,12 @@ Before running the bot, make sure you have the required Python libraries install
 pip install pyTelegramBotAPI SpeechRecognition pydub
 ```
 
+or
+
+```bash
+pip install -r requirements.txt
+```
+
 Also, ensure that you have a Telegram bot token. You can obtain one by talking to [@BotFather](https://t.me/BotFather) on Telegram.
 
 ## Setup
