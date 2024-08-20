@@ -22,7 +22,7 @@ def send_message(params: dict[str, str]) -> None:
     telegram_api_url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
     response = requests.post(telegram_api_url, params=params)
     if response.status_code != 200:
-        print(f"Failed to send message: {response.text}")
+        logger.error(f"Failed to send message: {response.text}")
 
 # Getting the questions
 with open(QSTN_PATH) as f:
